@@ -1,0 +1,11 @@
+node_modules/
+out/
+*.vsix
+.DS_Store
+AGENTS.md
+.vscode/
+.vscode-test/
+coverage/
+*.log
+npm-debug.log*
+.env

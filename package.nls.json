@@ -1,0 +1,12 @@
+{
+  "extension.description": "Kimi Code usage limits in the VS Code status bar",
+  "command.setApiKey.title": "Set API Key",
+  "config.refreshIntervalSeconds.description": "API polling interval in seconds.",
+  "config.apiHost.description": "API host. Use api.kimi.com for China.",
+  "config.claudeSettingsPath.description": "Path to the Claude settings file used when SecretStorage has no key.",
+  "config.alignment.description": "Side of the status bar.",
+  "config.barLength.description": "Progress bar length in the details panel.",
+  "config.warnPercent.description": "Yellow color threshold in percent.",
+  "config.errorPercent.description": "Red color threshold in percent.",
+  "config.showRateWindow.description": "Show the rate window in the tooltip."
+}

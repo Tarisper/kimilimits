@@ -1,0 +1,96 @@
+{
+  "name": "kimi-limits",
+  "displayName": "Kimi Limits",
+  "description": "%extension.description%",
+  "version": "0.1.0",
+  "publisher": "local",
+  "private": true,
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kimiLimits.setApiKey",
+        "category": "Kimi Limits",
+        "title": "%command.setApiKey.title%"
+      }
+    ],
+    "configuration": {
+      "title": "Kimi Limits",
+      "properties": {
+        "kimiLimits.refreshIntervalSeconds": {
+          "type": "number",
+          "default": 60,
+          "minimum": 30,
+          "description": "%config.refreshIntervalSeconds.description%"
+        },
+        "kimiLimits.apiHost": {
+          "type": "string",
+          "default": "api.kimi.ai",
+          "enum": [
+            "api.kimi.ai",
+            "api.kimi.com"
+          ],
+          "description": "%config.apiHost.description%"
+        },
+        "kimiLimits.claudeSettingsPath": {
+          "type": "string",
+          "default": "~/.claude/settings.json",
+          "description": "%config.claudeSettingsPath.description%"
+        },
+        "kimiLimits.alignment": {
+          "type": "string",
+          "default": "right",
+          "enum": [
+            "right",
+            "left"
+          ],
+          "description": "%config.alignment.description%"
+        },
+        "kimiLimits.barLength": {
+          "type": "number",
+          "default": 10,
+          "minimum": 1,
+          "description": "%config.barLength.description%"
+        },
+        "kimiLimits.warnPercent": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "maximum": 100,
+          "description": "%config.warnPercent.description%"
+        },
+        "kimiLimits.errorPercent": {
+          "type": "number",
+          "default": 85,
+          "minimum": 0,
+          "maximum": 100,
+          "description": "%config.errorPercent.description%"
+        },
+        "kimiLimits.showRateWindow": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.showRateWindow.description%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.0",
+    "@types/vscode": "~1.82.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.2.2"
+  }
+}

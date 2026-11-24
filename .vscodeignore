@@ -1,0 +1,8 @@
+src/**
+out/**/*.map
+tsconfig.json
+.vscode/**
+.vscodeignore
+AGENTS.md
+PLAN.md
+*.vsix

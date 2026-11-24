@@ -1,0 +1,12 @@
+{
+  "extension.description": "Лимиты использования Kimi Code в строке состояния VS Code",
+  "command.setApiKey.title": "Установить API-ключ",
+  "config.refreshIntervalSeconds.description": "Частота опроса API в секундах.",
+  "config.apiHost.description": "Хост API. Для Китая используйте api.kimi.com.",
+  "config.claudeSettingsPath.description": "Путь к файлу настроек Claude для чтения ключа, если SecretStorage пуст.",
+  "config.alignment.description": "Сторона строки состояния.",
+  "config.barLength.description": "Длина шкалы прогресса в панели.",
+  "config.warnPercent.description": "Порог жёлтого цвета в процентах.",
+  "config.errorPercent.description": "Порог красного цвета в процентах.",
+  "config.showRateWindow.description": "Показывать rate-окно в тултипе."
+}
