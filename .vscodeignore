@@ -3,6 +3,7 @@ out/**/*.map
 tsconfig.json
 .vscode/**
 .vscodeignore
+docs/**
 AGENTS.md
 PLAN.md
 *.vsix

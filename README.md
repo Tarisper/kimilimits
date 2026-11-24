@@ -2,6 +2,16 @@
 
 A VS Code extension that shows Kimi Code's 5-hour usage window and monthly quota in the status bar.
 
+## Screenshots
+
+Status bar indicator:
+
+![Status bar showing K with watch and calendar icons and percentages](docs/status-bar.png)
+
+Details panel (click the status bar item):
+
+![Details panel with progress bars, reset times, and refresh button](docs/details-panel.png)
+
 ## Features
 
 - A compact `K $(watch)15% $(calendar)7%` indicator with color-coded thresholds.
